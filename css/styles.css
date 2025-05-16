@@ -780,6 +780,7 @@ img, video, iframe, embed, object {
 .row .six {
 	width: 50%;
 }
+
 /* Services
     -------------------------------------------------*/
 
@@ -969,14 +970,65 @@ img, video, iframe, embed, object {
     gap: 8px;
 }
 
+/* -------------------------------- FAQ  -------------------------------------------------*/
 
-
-#contactUs .btn {
-	border-radius: 0px !important;
-	border: 0px !important;
-	background: #FF5200;
-	color: #fff !important;
+.accordion {
+  background-color: #d6e4ff;
+  color: #0d149b;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: solid #a2b4da 0.5px ;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 10px;
+  gap: 1rem;
 }
+.active, .accordion:hover {
+  background-color: #a2b4da; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* --------------------------------  CONTACT  -------------------------------------------------*/
+
+label{
+text-align: left;
+padding-left: 10px;
+}
+.in {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.send {
+  width: auto;
+  background-color: #dc1818;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: #881818;
+}
+
 nav#filter {
 	margin-bottom: 1.5em;
 }
